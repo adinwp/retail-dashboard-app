@@ -21,7 +21,7 @@ st.set_page_config(
 def load_data():
     # Load standard Superstore dataset
     # Ensure 'superstore.csv' is in the same directory
-    df = pd.read_csv("superstore.csv", encoding="ISO-8859-1")
+    df = pd.read_csv("Superstore.csv", encoding="ISO-8859-1")
     
     # Standardize column names (optional, depends on source file)
     # This maps common variations to a standard format
@@ -159,4 +159,5 @@ with st.expander("Click to view Raw Data"):
         data=csv,
         file_name='filtered_sales_data.csv',
         mime='text/csv',
+
     )
